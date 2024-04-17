@@ -16,9 +16,10 @@ const BannerCard = () => {
                         <p>4 or more words</p>
                     </section>
                     <section>
-                        <p>Quotes of the anime</p>
+                        <h4>Quotes of the anime</h4>
                     </section>
-                    <img src="" alt="" />
+                    <img src="src\assets\kirito-noscreen.png" alt="" />
+                    {/* <img src="src\assets\anigirl.png" alt="" /> */}
                 </main>
                 <footer>
                     <div className="logos">
