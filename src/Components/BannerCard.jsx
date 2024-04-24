@@ -3,22 +3,27 @@ import "./Styles/bannerCard.scss"
 import { FaInstagram } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
-const BannerCard = () => {
+const BannerCard = (props) => {
+    console.log("if undefined is occuring after this text then u havent attached imgSrc prop to the bannerCard component",props.imgSrc)
     return (
         <div className="wrapper">
-            <div className='banner-card'>
+            <div className='banner-card' style={{"backgroundColor":props.mycolor,
+        "background-image": `linear-gradient(120deg, ${props.from} 0%, ${props.to} 100%)`        }}>
                 <header>
-                    <h5>NAME OF THE ANIME</h5>
+                    <h5>{props.title}</h5>
                     <div>≡</div>
                 </header>
                 <main className='main-content'>
+                    {/* <img src="src\assets\kirito-noscreen.png" alt="" /> */}
+                    <img src={(props.imgSrc == undefined || props.imgSrc == "") ?("/kirito-noscreen.png"):(props.imgSrc)} alt="" />
                     <section>
-                        <p>4 or more words</p>
+                        <p>{props.heading}</p>
                     </section>
-                    <section>
-                        <h4>Quotes of the anime</h4>
+                    <section className='anime-quote'>
+                        <h4>{props.quote}</h4>
+
                     </section>
-                    <img src="src\assets\kirito-noscreen.png" alt="" />
+
                     {/* <img src="src\assets\anigirl.png" alt="" /> */}
                 </main>
                 <footer>
