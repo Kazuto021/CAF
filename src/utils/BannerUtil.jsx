@@ -28,7 +28,7 @@ const Bannerinfo = {
     jjk: {
         Name: "Jujutsu Kaisen",
         Img: "/gojo2.png",
-        Heading: "Strongest Sorcerer",
+        Heading: "STRONGEST SORCERER",
         Quote: "Throughout Heaven and Earth, I Alone Am The Honored One",
         gradient: {
             degree: "120deg",
@@ -36,9 +36,7 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#120d2f",
             endOpacity: "95"
-
         }
-
     },
     onepiece: {
         Name: "One Piece",
@@ -51,7 +49,20 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#304352",
             endOpacity: "100"
-
+        }
+    },
+    dbz: {
+        Name: "Dragon Ball Z",
+        Img: "/goku2.png",
+        Heading: "I am the Super Saiyan...Son Goku!",
+        Quote: "I am the answer to all living things that cry out for peace. I am protector of the innocent. I am the light in the darkness. I am truth. Ally to good! Nightmare to you.",
+        gradient: {
+            degree: "120deg",
+            from: "#000000",
+            startOpacity: "-20",
+            // to: "#f9d423",
+            to: "#fa722a",
+            endOpacity: "100"
         }
     }
 }

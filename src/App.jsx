@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import BannerCard from "./Components/BannerCard";
 import Bannerinfo from "./utils/BannerUtil";
+import SpecialBannerCard from "./Components/SpecialBannerCard";
 
 const App = () => {
+
   return (
     <>
 
@@ -57,8 +59,20 @@ const App = () => {
         imgSrc={Bannerinfo.onepiece.Img}
         quote={Bannerinfo.onepiece.Quote}
         heading={Bannerinfo.onepiece.Heading}
-
       />
+      
+      {/* <SpecialBannerCard
+        title={Bannerinfo.dbz.Name}
+        mycolor="#c81325c9"
+        degree={Bannerinfo.dbz.gradient.degree}
+        from={Bannerinfo.dbz.gradient.from}
+        startOpacity={Bannerinfo.dbz.gradient.startOpacity}
+        endOpacity={Bannerinfo.dbz.gradient.endOpacity}
+        to={Bannerinfo.dbz.gradient.to}
+        imgSrc={Bannerinfo.dbz.Img}
+        quote={Bannerinfo.dbz.Quote}
+        heading={Bannerinfo.dbz.Heading}
+      /> */}
     </>
   );
 };
