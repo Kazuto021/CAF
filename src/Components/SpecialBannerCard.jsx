@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 // import { FaArrowDown } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaRegMoon } from "react-icons/fa";
 
 const SpecialBannerCard = (props) => {
     let [mouseX, setMouseX] = useState(0)
@@ -33,7 +33,7 @@ const SpecialBannerCard = (props) => {
     const mouseMovement = (e) => {
         let divFollower = document.getElementsByClassName("cursor-follower")[0]
 
-        divFollower.style.transform = "scale(1)";
+        divFollower.style.transform = "scale(0.8)";
         // console.log(e)
         setMouseX(() => {
             return e.clientX;
@@ -42,7 +42,7 @@ const SpecialBannerCard = (props) => {
             return e.clientY;
         })
         ref.style.left = (mouseX) - 80 + "px";
-        ref.style.top = mouseY - 80 + "px";
+        ref.style.top = (mouseY) - 80 + "px";
 
     }
     const scalingDown=()=>{
@@ -79,8 +79,9 @@ const SpecialBannerCard = (props) => {
                 </main>
                 <footer>
                     <div className="special-footer-element">
-                        <div className="special-down-arrow">
-                            <FaArrowLeft />
+                        <div className="special-down-arrow" onClick={applyFillAnimation}>
+                            {/* <FaArrowLeft /> */}
+                            <FaRegMoon />
                         </div>
                         <div className="special-logos">
 
@@ -90,13 +91,14 @@ const SpecialBannerCard = (props) => {
 
                     </div>
 
-                    <div className="special-down-arrow special-footer-element" onClick={applyFillAnimation}>
+                    <div className="special-down-arrow special-footer-element" >
                         <FaArrowRight />
 
                     </div>
 
                 </footer>
             </div >
+            <div className='copyright'>Designed and Created by Kazu.</div>
         </div >
     )
 }

@@ -53,15 +53,15 @@ const Bannerinfo = {
     },
     dbz: {
         Name: "Dragon Ball Z",
-        Img: "/goku2.png",
-        Heading: "I am the Super Saiyan...Son Goku!",
+        Img: "/gokunew.png",
+        Heading: "I AM THE SUPER SAIYAN...SON GOKU!",
         Quote: "I am the answer to all living things that cry out for peace. I am protector of the innocent. I am the light in the darkness. I am truth. Ally to good! Nightmare to you.",
         gradient: {
             degree: "120deg",
             from: "#000000",
             startOpacity: "-20",
-            // to: "#f9d423",
-            to: "#fa722a",
+            to: "#6a85b6",
+            // to: "#ff887c",
             endOpacity: "100"
         }
     }

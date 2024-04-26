@@ -17,6 +17,7 @@ const Home = () => {
         quote={Bannerinfo.dbz.Quote}
         heading={Bannerinfo.dbz.Heading}
       />
+    
     </>
   )
 }
