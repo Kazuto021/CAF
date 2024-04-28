@@ -1,23 +1,20 @@
 import React from 'react'
-import SpecialBannerCard from '../Components/SpecialBannerCard'
+import Navbar from '../Components/Navbar'
 import Bannerinfo from '../utils/BannerUtil'
+import "./Styles/homescreen.scss"
 
+import Content from '../Components/Content'
 const Home = () => {
+  
   return (
-    <>
-    <SpecialBannerCard
-        title={Bannerinfo.dbz.Name}
-        mycolor="#c81325c9"
-        degree={Bannerinfo.dbz.gradient.degree}
-        from={Bannerinfo.dbz.gradient.from}
-        startOpacity={Bannerinfo.dbz.gradient.startOpacity}
-        endOpacity={Bannerinfo.dbz.gradient.endOpacity}
-        to={Bannerinfo.dbz.gradient.to}
-        imgSrc={Bannerinfo.dbz.Img}
-        quote={Bannerinfo.dbz.Quote}
-        heading={Bannerinfo.dbz.Heading}
-      />
-    </>
+    <div className='home-wrapper' style={{'backgroundImage':`url(${Bannerinfo.jjk.BodyBg})`}}>
+      <Navbar />
+      <div className='main-div-wrapper'>
+        <Content
+          bgImg={Bannerinfo.jjk.CardBgImg}
+          name={Bannerinfo.jjk.Name} />
+      </div>
+    </div>
   )
 }
 

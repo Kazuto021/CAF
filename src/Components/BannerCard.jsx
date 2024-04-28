@@ -50,6 +50,7 @@ const BannerCard = (props) => {
 
                 </footer>
             </div >
+            <div className='copyright'>Designed and Created by Kazu.</div>
         </div >
     )
 }

@@ -1,6 +1,6 @@
 const Bannerinfo = {
     naruto: {
-        Name: "Naruto Shippuden",
+        Name: "NARUTO SHIPPUDEN",
         Img: "/hinatalook.png",
         Quote: "All The Time. I Just Wanted To Be With You. You Changed Me! Your Smile Is What Saved Me! That Is Why I’m Not Afraid To Die Protecting You!",
         Heading: "SOMEBODY TOLD ME I’M A FAILURE, I’LL PROVE THEM WRONG",
@@ -10,7 +10,8 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#d57eeb",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     sao: {
         Name: "Sword art online",
@@ -23,7 +24,8 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#005bea",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     jjk: {
         Name: "Jujutsu Kaisen",
@@ -36,7 +38,9 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#120d2f",
             endOpacity: "95"
-        }
+        },
+        CardBgImg: "gojoCard.jpeg",
+        BodyBg: "sukunajjk.png"
     },
     onepiece: {
         Name: "One Piece",
@@ -49,21 +53,23 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#304352",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     dbz: {
         Name: "Dragon Ball Z",
-        Img: "/goku2.png",
-        Heading: "I am the Super Saiyan...Son Goku!",
+        Img: "/gokunew.png",
+        Heading: "I AM THE SUPER SAIYAN...SON GOKU!",
         Quote: "I am the answer to all living things that cry out for peace. I am protector of the innocent. I am the light in the darkness. I am truth. Ally to good! Nightmare to you.",
         gradient: {
             degree: "120deg",
             from: "#000000",
             startOpacity: "-20",
-            // to: "#f9d423",
-            to: "#fa722a",
+            to: "#6a85b6",
+            // to: "#ff887c",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     }
 }
 

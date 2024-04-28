@@ -1,0 +1,27 @@
+// $bg : url("boku no hero.png");
+$bg : url("illus.jpg");
+// $bg : url("pain.jpg");
+.home-wrapper{
+    height: 100vh;
+    background-image: $bg;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+    
+    .main-div-wrapper{
+        display: flex;
+        height: calc(100% - 7%);
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+// .home-wrapper *{
+//     font-size: calc(0.09rem + 1vw);
+// }
