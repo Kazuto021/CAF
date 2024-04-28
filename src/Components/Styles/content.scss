@@ -154,36 +154,7 @@
         transform: scale(1.3);
         // filter: brightness(1.5);
       }
-      .controllers{
-        // height: 60%;
-        display: grid;
-        place-content: center;
-        // border: 1px solid white;
-        
-        .right-arrow{
-            display: flex;
-            border: 1px solid white;
-            height: 100%;
-            padding: 1.2rem;
-            border-radius: 50%;
-            font-size: 1.5rem;
-        }
-        .right-arrow:hover{
-            cursor: pointer;
-            transition: 0.2s;
 
-            scale: 1;
-
-            border:0.2em solid red;
-            z-index: 0;
-
-        }
-
-        .right-arrow:not(:hover){
-            transition: 0.3s;
-            scale: 0.5;
-        }
-      }
     }
 
   }

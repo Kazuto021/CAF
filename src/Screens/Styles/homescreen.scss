@@ -11,7 +11,7 @@ $bg : url("illus.jpg");
     align-items: center;
     flex-direction: column;
     
-
+    transition: 1s;
     
     .main-div-wrapper{
         display: flex;
@@ -21,6 +21,41 @@ $bg : url("illus.jpg");
         align-items: center;
 
     }
+    .controllers{
+        // height: 60%;
+        color: white;
+        display: grid;
+        place-content: center;
+        position: fixed;
+        left: 82%;
+        top:80%;
+        // border: 1px solid white;
+        
+        .right-arrow{
+            display: flex;
+            border: 1px solid white;
+            height: 100%;
+            padding: 1.2rem;
+            border-radius: 50%;
+            font-size: 1.5rem;
+        }
+        .right-arrow:hover{
+            cursor: pointer;
+            transition: 0.2s;
+
+            backdrop-filter: blur(25px);
+            scale: 1;
+
+            border:0.2em solid red;
+            z-index: 0;
+
+        }
+
+        .right-arrow:not(:hover){
+            transition: 0.3s;
+            scale: 0.5;
+        }
+      }
 }
 // .home-wrapper *{
 //     font-size: calc(0.09rem + 1vw);
