@@ -11,7 +11,8 @@ const Bannerinfo = {
             to: "#d57eeb",
             endOpacity: "100"
         },
-        CardBgImg: "narutoCardbg.jpeg"
+        CardBgImg: "hinata_hyuuga.jpeg",
+        BodyBg: "Itachi.png"
     },
     sao: {
         Name: "Sword art online",
@@ -25,7 +26,8 @@ const Bannerinfo = {
             to: "#005bea",
             endOpacity: "100"
         },
-        CardBgImg: "narutoCardbg.jpeg"
+        CardBgImg: "asunaCard.jpeg",
+        BodyBg:"saobg.jpg"
     },
     jjk: {
         Name: "Jujutsu Kaisen",
@@ -54,7 +56,8 @@ const Bannerinfo = {
             to: "#304352",
             endOpacity: "100"
         },
-        CardBgImg: "narutoCardbg.jpeg"
+        CardBgImg: "whiteBeardCard.jpeg",
+        BodyBg:"zorobg.gif"
     },
     dbz: {
         Name: "Dragon Ball Z",
@@ -69,7 +72,8 @@ const Bannerinfo = {
             // to: "#ff887c",
             endOpacity: "100"
         },
-        CardBgImg: "narutoCardbg.jpeg"
+        CardBgImg: "gokuCard.jpg",
+        BodyBg:"gokuhighres.jpg"
     }
 }
 
