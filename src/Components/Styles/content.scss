@@ -1,0 +1,109 @@
+.content-wrapper{
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    
+    overflow: scroll;
+    // border: 2px solid black;
+    max-height: 100%;
+    .anime-info{
+        width: 40%;
+        max-width: 40%;
+        text-align: center;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        // backdrop-filter: blur(3px);
+        h1{ 
+            font-size: calc(4rem);
+            letter-spacing: 0.7rem;
+            // word-spacing: 0.02rem;
+            height: 40%;
+            text-align: center;
+            // display: flexbox;
+            text-wrap: wrap;
+            // width: min-content;
+            // width: max-content;
+            // width: auto;
+            border-radius: 25px;
+            backdrop-filter: blur(5px);
+            
+            overflow: auto;
+            border: 0.01em solid white;
+            -webkit-text-stroke: 0.9px;
+            -webkit-text-stroke-color: black;
+        }
+        h1:hover{
+            cursor: pointer;
+            transition: 0.7s;
+            backdrop-filter: blur(0px);
+            // border: none;
+            // border: hidden;
+        }
+        
+        h1:not(:hover){
+            transition: 1.5s;
+            backdrop-filter: blur(10px);
+        }
+        p{
+            overflow: scroll;
+            max-height: 40%;
+            font-size: large;
+            letter-spacing: 0.08rem;
+            -webkit-text-stroke: 0.02px;
+            -webkit-text-stroke-color: black;
+        }
+        p::first-letter{
+            color:red;
+            font-size: 2rem;
+        }
+        p::-webkit-scrollbar{
+            display: none;
+        }
+        .others{
+            display: flex;
+            font-size: large;
+            letter-spacing: 0.02rem;
+            column-gap: 1rem;
+            align-items: center;
+            justify-content: space-evenly;
+            // border: 1px solid white;
+            padding: 1rem;
+            .bookmark{
+                padding: 0.5rem;
+                padding-bottom: 0.2rem;
+                border-radius: 50%;
+            }
+            .explore{
+                padding: 0.4rem;
+                border-radius: 25px;
+                transition: 0.1s;
+            }
+            // .explore:hover{
+                
+            //     transition: 0.1s;
+            //     // font-size: 1.3rem;
+            //     // letter-spacing: 0.04rem;
+            //     // color:red;
+            //     // font-weight: 900;
+            // }
+            .explore:hover::first-letter{
+                // font-size: larger;
+                transition: s;
+                color:red;
+            }
+        }
+        .others > *{
+            // padding: 0.02rem;
+            border:1px solid white;
+            cursor: pointer;
+        }
+        
+    }
+}
+.content-wrapper::-webkit-scrollbar{
+    display: none;
+}
