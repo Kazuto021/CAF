@@ -1,6 +1,6 @@
 const Bannerinfo = {
     naruto: {
-        Name: "Naruto Shippuden",
+        Name: "NARUTO SHIPPUDEN",
         Img: "/hinatalook.png",
         Quote: "All The Time. I Just Wanted To Be With You. You Changed Me! Your Smile Is What Saved Me! That Is Why I’m Not Afraid To Die Protecting You!",
         Heading: "SOMEBODY TOLD ME I’M A FAILURE, I’LL PROVE THEM WRONG",
@@ -10,7 +10,8 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#d57eeb",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     sao: {
         Name: "Sword art online",
@@ -23,7 +24,8 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#005bea",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     jjk: {
         Name: "Jujutsu Kaisen",
@@ -36,7 +38,9 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#120d2f",
             endOpacity: "95"
-        }
+        },
+        CardBgImg: "gojoCard.jpeg",
+        BodyBg: "sukunajjk.png"
     },
     onepiece: {
         Name: "One Piece",
@@ -49,7 +53,8 @@ const Bannerinfo = {
             startOpacity: "0",
             to: "#304352",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     },
     dbz: {
         Name: "Dragon Ball Z",
@@ -63,7 +68,8 @@ const Bannerinfo = {
             to: "#6a85b6",
             // to: "#ff887c",
             endOpacity: "100"
-        }
+        },
+        CardBgImg: "narutoCardbg.jpeg"
     }
 }
 

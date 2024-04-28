@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <nav className=''>
         <div className="site-info">
-          <img className="logo" src="https://iyengaryogalondon.co.uk/wp-content/uploads/2020/07/Om_symbol_blog.jpg" alt="" />
+          <img className="logo" src="newLogo.png" alt="" />
           <div className="vertical-line"></div>
           <div className='site-name'>
             <h4>COLLAB SITE</h4>

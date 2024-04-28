@@ -1,5 +1,6 @@
 // $bg : url("boku no hero.png");
 $bg : url("illus.jpg");
+// $bg : url("pain.jpg");
 .home-wrapper{
     height: 100vh;
     background-image: $bg;
@@ -10,8 +11,7 @@ $bg : url("illus.jpg");
     align-items: center;
     flex-direction: column;
     
-    
-    // row-gap: 40%;
+
     
     .main-div-wrapper{
         display: flex;
@@ -19,10 +19,7 @@ $bg : url("illus.jpg");
         width: 90%;
         justify-content: center;
         align-items: center;
-        // backdrop-filter: blur(2px);
-        // border: 2px solid green;
-        // height:100%;
-        // border:5px solid 
+
     }
 }
 // .home-wrapper *{
