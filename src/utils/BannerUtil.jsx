@@ -42,7 +42,7 @@ const Bannerinfo = {
             endOpacity: "95"
         },
         CardBgImg: "gojoCard.jpeg",
-        BodyBg: "sukunajjk.png"
+        BodyBg: "jjkBg.jpg"
     },
     onepiece: {
         Name: "One Piece",
@@ -56,8 +56,8 @@ const Bannerinfo = {
             to: "#304352",
             endOpacity: "100"
         },
-        CardBgImg: "whiteBeardCard.jpeg",
-        BodyBg:"zorobg.gif"
+        CardBgImg: "Zoro.jpeg",
+        BodyBg:"Luffy_wallpaper.jpeg"
     },
     dbz: {
         Name: "Dragon Ball Z",
@@ -74,6 +74,22 @@ const Bannerinfo = {
         },
         CardBgImg: "gokuCard.jpg",
         BodyBg:"gokuhighres.jpg"
+    },
+    mha: {
+        Name: "boku no hero academia",
+        Img: "/gokunew.png",
+        Heading: "I AM THE SUPER SAIYAN...SON GOKU!",
+        Quote: "I am the answer to all living things that cry out for peace. I am protector of the innocent. I am the light in the darkness. I am truth. Ally to good! Nightmare to you.",
+        gradient: {
+            degree: "120deg",
+            from: "#000000",
+            startOpacity: "-20",
+            to: "#6a85b6",
+            // to: "#ff887c",
+            endOpacity: "100"
+        },
+        CardBgImg: "MHA.jpeg",
+        BodyBg:"mhabg.png"
     }
 }
 
