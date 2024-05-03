@@ -66,7 +66,6 @@ const Home = () => {
       console.log("index before changing: ", currentIndex);
       let animeName = animeList[currentIndex];
       setAnime(animeName);
-
       setIndex(currentIndex + 1);
 
     } else {
@@ -117,7 +116,7 @@ const Home = () => {
   const hoverOutTranslate = () => {
     document.getElementById("current-card").style.transform =
       "translate(0,0rem)";
-    document.getElementById("current-card").style.border = "none";
+    // document.getElementById("current-card").style.border = "none";
   };
   return (
     currentAnime !== "caf" ?(

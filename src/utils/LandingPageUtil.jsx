@@ -11,8 +11,10 @@ const HomePageInfo = {
             to: "#d57eeb",
             endOpacity: "100"
         },
-        CardBgImg: "hinata_hyuuga.jpeg",
+        CardBgImg: "wholesome.png",
         BodyBg: "illus.jpg"
+
+        
     }
 }
 export default HomePageInfo
