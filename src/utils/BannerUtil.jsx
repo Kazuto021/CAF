@@ -90,6 +90,22 @@ const Bannerinfo = {
         },
         CardBgImg: "MHA.jpeg",
         BodyBg:"mhabg.png"
+    },
+    soloLevel: {
+        Name: "Solo Levelling",
+        Img: "/gokunew.png",
+        Heading: "I AM THE SUPER SAIYAN...SON GOKU!",
+        Quote: "I am the answer to all living things that cry out for peace. I am protector of the innocent. I am the light in the darkness. I am truth. Ally to good! Nightmare to you.",
+        gradient: {
+            degree: "120deg",
+            from: "#000000",
+            startOpacity: "-20",
+            to: "#6a85b6",
+            // to: "#ff887c",
+            endOpacity: "100"
+        },
+        CardBgImg: "soloLevel.jpg",
+        BodyBg:"sung-jin-woo-solo-leveling-uhdpaper.com-hd-7.1072.jpg"
     }
 }
 

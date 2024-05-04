@@ -3,7 +3,8 @@
   color: whitesmoke;
   justify-content: space-between;
 
-  overflow: scroll;
+  // overflow: scroll;
+  overflow: visible;
   // border: 2px solid black;
   // max-height: 100%;
   max-height: max-content;
@@ -20,43 +21,86 @@
     row-gap: 1rem;
     align-self: center;
     // overflow: hidden;
+    // overflow: visible;
     z-index: 0;
     // backdrop-filter: blur(3px);
     h1 {
+      display: inline-flex;
+      
+      position: inherit;
       font-size: calc(4rem);
       letter-spacing: 0.2rem;
-      // word-spacing: 0.02rem;
       height: 40%;
       text-align: center;
-      // display: flexbox;
       text-wrap: wrap;
-      // width: min-content;
-      // width: max-content;
-      // width: auto;
+
       border-radius: 25px;
       backdrop-filter: blur(5px);
 
       overflow: auto;
+      // overflow: none;
       border: 0.01em solid white;
+
       -webkit-text-stroke: 0.9px;
       -webkit-text-stroke-color: black;
-      transition: all 2s;
-    }
-    h1:hover {
-      cursor: pointer;
+      // transition: all 2s;
+      transform-origin: center;
       
+    }
+    h1::-webkit-scrollbar {
+      display: none;
+    }
+    h1::before{
+      content:'';
+
+      top: 50%;
+      right: 50%;
+
+      transform: translate(50%,-50%);
+
+      z-index: -10;
+      border-radius: 50%;
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      // background-color: rgba(255, 255, 255, 0.703);
+    }
+    h1:hover{
+      cursor: pointer;
+      transition: 0.7s;
+      overflow: visible;
+      backdrop-filter: blur(0px);
+      border: none;
+    }
+    h1:hover::before {
+      cursor: pointer;
+      // background-color: rgba(255, 255, 255, 0.703);
+      background-color: rgb(19, 18, 18);
       transition: 0.7s;
       backdrop-filter: blur(0px);
       // border: none;
-      border: hidden;
+      overflow: visible;
+      width:400px;
+      // width:calc(100% + 2rem);
+      // height:calc(250% + 0.5rem);
+      height:400px;
+      // transform: scale(2);
+      border: hidden; 
+    }
+    h1:not(:hover){
+      transition: 1s;
+      // overflow: visible;
+      
     }
 
-    h1:not(:hover) {
+    h1:not(:hover)::before {
+      // transition: 1.5s;
       transition: 1.5s;
       backdrop-filter: blur(10px);
+      // overflow: visible;
     }
     p {
-      cursor: pointer; 
+      cursor: pointer;
       position: inherit;
       max-height: 40%;
       font-size: large;
@@ -66,42 +110,41 @@
 
       -webkit-text-stroke-color: black;
       border-radius: 25px;
-
+      z-index: 5;
     }
-    p:before{
-      
-      content: '';
+    p:before {
+      content: "";
       position: absolute;
-      
+
       height: 400px;
       width: 400px;
-      
-      border-radius: 40%;
+
+      border-radius: 35%;
       // border-radius: 50%;
       top: -100%;
-      left:-25%;
-      transform: translate(-50%,-50%);
+      // bottom: -50%;
+      left: -50%;
+      transform: translate(-50%, -50%);
       // background-color: white;
 
       z-index: -1;
       animation: rotateBorder 6s linear infinite;
-      
-
 
       // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
       background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     }
     p:hover::before {
-
       transition: 3s;
-      height: 700px;
-      width: 700px;
+      height: calc(50% + 600px);
+      // aspect-ratio: 2;
+      width: calc(50% + 600px);
       // border: 1px solid black;
-      filter: blur(25px);
-      // filter: opacity(0.8);
+      filter: blur(15px);
+      // filter: opacity(0.4);
+      filter: opacity(0.8);
       // border-radius: 2px;
     }
-    P:not(:hover):before{
+    P:not(:hover):before {
       transition: 2s;
     }
     p::first-letter {
@@ -151,7 +194,6 @@
     }
   }
   .carousel-wrapper {
-
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -162,7 +204,7 @@
       height: 70%;
       display: grid;
 
-    //   border: 1px solid white;
+      //   border: 1px solid white;
 
       text-align: center;
       grid-template-rows: 10% 70% 20%;
@@ -195,7 +237,6 @@
         // padding-bottom: 3px;
         // filter: blur(px);
         // filter: brightness(0.8);
-
       }
       // .current-card:hover{
       //   transition: 0.2s;
@@ -215,13 +256,84 @@
       //   width: 100%;
       //   background-color: red;
       // }
-
     }
-
   }
 }
 .content-wrapper::-webkit-scrollbar {
   display: none;
+}
+@media screen and (min-width: 370px) and (max-width: 700px) {
+  .content-wrapper {
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-between;
+    overflow: scroll;
+    // border: 2px solid black;
+    // max-height: 100%;
+    max-height: max-content;
+    .anime-info {
+      width: 40%;
+      max-width: 40%;
+      position: relative;
+      text-align: center;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 1rem;
+      align-self: center;
+      // overflow: hidden;
+      z-index: 0;
+      p {
+        cursor: pointer;
+        position: inherit;
+        max-height: 40%;
+        font-size: large;
+        letter-spacing: 0.08rem;
+        overflow: hidden;
+        -webkit-text-stroke: 0.1px;
+
+        -webkit-text-stroke-color: black;
+        border-radius: 25px;
+      }
+      p:before {
+        content: "";
+        position: absolute;
+
+        height: 400px;
+        width: 400px;
+
+        border-radius: 40%;
+        // border-radius: 50%;
+        top: 50%;
+        // bottom: -100%;
+        // left: -100%;
+        transform: translate(-50%, -50%);
+        // background-color: white;
+
+        z-index: -1;
+        animation: rotateBorder 6s linear infinite;
+
+        // background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      }
+      p:hover::before {
+        transition: 3s;
+        height: 1200px;
+        top: -50%;
+        // aspect-ratio: 2;
+        width: 1200px;
+        // border: 1px solid black;
+        filter: blur(15px);
+        filter: opacity(1);
+        // border-radius: 2px;
+      }
+      P:not(:hover):before {
+        transition: 2s;
+      }
+    }
+  }
 }
 
 @keyframes rotateBorder {
