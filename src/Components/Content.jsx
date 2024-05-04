@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaRegBookmark } from "react-icons/fa6";
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 
 import "./Styles/content.scss"
 const Content = (props) => {
@@ -24,7 +24,7 @@ const Content = (props) => {
             <div className='carousel-wrapper'>
                 <div className='carousel'>
                     <h2 className='currently-showing'>Currently Viewing</h2>
-                    <div className='current-card' style={{"backgroundImage":`url(${props.bgImg})`}}></div>
+                    <div id="current-card" className='current-card border-grow' style={{"backgroundImage":`url(${props.bgImg})`}}></div>
                     
                 </div>
             </div>

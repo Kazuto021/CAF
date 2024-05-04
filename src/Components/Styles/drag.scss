@@ -1,0 +1,21 @@
+.drag-wrapper {
+  height: 100vh;
+
+  .dragable {
+    height: 50%;
+    border: 2px solid red;
+    color: red;
+    cursor: grab;
+  }
+  // .dragable:{
+
+  //   cursor: grabbing;
+  // }
+  .hang-area {
+    height: 49%;
+    border: 3px solid black;
+    position: absolute;
+    top: 0;
+    left: 70%;
+  }
+}

@@ -11,7 +11,7 @@ $bg : url("illus.jpg");
     align-items: center;
     flex-direction: column;
     
-    transition: 1s;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     
     .main-div-wrapper{
         display: flex;
@@ -50,12 +50,39 @@ $bg : url("illus.jpg");
             z-index: 0;
 
         }
+        // .right-arrow:hover ~ .current-card{
+        //     transform: translateY(-1rem);
+        // }
 
         .right-arrow:not(:hover){
             transition: 0.3s;
             scale: 0.5;
         }
       }
+}
+.border-grow{
+    animation: border-growth 1s linear forwards;
+}
+.border-shrinker{
+    animation: border-shrink 1s linear forwards;
+}
+@keyframes border-growth {
+    from{
+        border-bottom-width: 0;
+    }
+    to{
+        border-bottom-width:100%;
+        border-color: red;
+    }
+}
+@keyframes border-shrink {
+    from{
+        border-bottom-width: 100%;
+        border-color: red;
+    }
+    to{
+        border-bottom-width:0;
+    }
 }
 // .home-wrapper *{
 //     font-size: calc(0.09rem + 1vw);

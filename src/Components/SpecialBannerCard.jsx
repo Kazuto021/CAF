@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "./Styles/special.scss"
+import Bannerinfo from '../utils/BannerUtil';
 import { FaInstagram } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa6";
 // import { FaArrowDown } from "react-icons/fa6";
@@ -9,6 +10,8 @@ import { FaRegMoon } from "react-icons/fa";
 const SpecialBannerCard = (props) => {
     let [mouseX, setMouseX] = useState(0)
     let [mouseY, setMouseY] = useState(0)
+    let animeBanner = Object.keys(Bannerinfo)
+    let [currentBanner,setBanner] = useState[animeBanner[0]]
 
     // let divFollower = document.getElementsByClassName("cursor-follower")[0]
     const ref = document.querySelector(".cursor-follower")
