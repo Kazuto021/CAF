@@ -1,21 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
 import SpecialBannerCard from '../Components/SpecialBannerCard'
 import Bannerinfo from '../utils/BannerUtil'
 
 const Special = () => {
+let animeList =  Object.keys(Bannerinfo)
+console.log(animeList)
+// let [currentIndex , setIndex] = useState[0]
+let [currentAnime , setAnime] = useState(animeList[0])
+// let currentAnime = "dbz"
   return (
     <>
       <SpecialBannerCard
-        title={Bannerinfo.dbz.Name}
+        title={Bannerinfo[currentAnime].Name}
         mycolor="#c81325c9"
-        degree={Bannerinfo.dbz.gradient.degree}
-        from={Bannerinfo.dbz.gradient.from}
-        startOpacity={Bannerinfo.dbz.gradient.startOpacity}
-        endOpacity={Bannerinfo.dbz.gradient.endOpacity}
-        to={Bannerinfo.dbz.gradient.to}
-        imgSrc={Bannerinfo.dbz.Img}
-        quote={Bannerinfo.dbz.Quote}
-        heading={Bannerinfo.dbz.Heading}
+        degree={Bannerinfo[currentAnime].gradient.degree}
+        from={Bannerinfo[currentAnime].gradient.from}
+        startOpacity={Bannerinfo[currentAnime].gradient.startOpacity}
+        endOpacity={Bannerinfo[currentAnime].gradient.endOpacity}
+        to={Bannerinfo[currentAnime].gradient.to}
+        imgSrc={Bannerinfo[currentAnime].Img}
+        quote={Bannerinfo[currentAnime].Quote}
+        heading={Bannerinfo[currentAnime].Heading}
       />
     </>
   )

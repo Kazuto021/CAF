@@ -3,7 +3,7 @@ import { FaRegBookmark } from "react-icons/fa6";
 // import { FaArrowRight } from "react-icons/fa";
 
 import "./Styles/content.scss"
-const Content = (props) => {
+const   Content = (props) => {
     return (
         <div className='content-wrapper'>
             <div className='anime-info'>
